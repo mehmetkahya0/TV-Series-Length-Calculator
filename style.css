@@ -1,0 +1,331 @@
+:root {
+  font-family: "Courier New", Courier, monospace;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #000000;
+}
+
+header {
+  background-color: #eeeeee;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  font-size: x-large;
+  font-weight: bolder;
+  text-align: center;
+}
+
+body {
+  background-color: rgb(56, 56, 56);
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 5vh;
+  padding: 0 20px;
+}
+
+label {
+  font-size: 16px;
+  font-weight: bolder;
+  margin-bottom: 5px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+button[type="button"] {
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: rgb(52, 67, 122);
+  color: white;
+  font-weight: bolder;
+}
+
+button:hover {
+  background-color: rgb(45, 58, 105);
+}
+
+button:active {
+  background-color: rgb(52, 67, 122);
+}
+
+#result {
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  color: #333;
+  text-align: center;
+}
+
+p {
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+.movies {
+  display: block;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+  padding: 20px;
+  background-color: #fff;
+  color: #333;
+  text-align: center;
+  align-items: center;
+}
+
+.movies img {
+  width: 200px;
+  height: 300px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: rgb(52, 67, 122);
+}
+
+.movies img:hover {
+  background-color: rgb(52, 67, 122);
+  width: 75%;
+  height: auto;
+  transition: 0.5s;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+
+}
+
+.movies h2 {
+  font-size: 32px;
+  font-weight: bolder;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  background-color: rgb(52, 67, 122);
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#result h2 {
+  font-size: 32px;
+  font-weight: bolder;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  background-color: rgb(52, 67, 122);
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#movieLength {
+  font-size: large;
+  font-weight: bolder;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  background-color: rgb(52, 67, 122);
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#movieName {
+  font-size: x-large;
+  font-weight: bolder;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  background-color: rgb(52, 67, 122);
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#movieInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  background-color: #fff;
+  color: #333;
+  text-align: center;
+}
+
+#movieDirector {
+  font-size: large;
+  font-weight: bolder;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  background-color: rgb(52, 67, 122);
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#movieDirector {
+  font-size: medium;
+  font-weight: bolder;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+#movieYear {
+  font-size: medium;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+#movieActors {
+  font-size: small;
+  font-weight: bolder;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+#moviePlot {
+  font-size: smaller;
+  font-weight: thin;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+#notification {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  padding: 10px;
+  background-color: #f44336; /* Red */
+  color: white;
+  z-index: 1000; /* Ensure it sits on top */
+  opacity: 0;
+  transition: opacity 2s;
+  border-radius: 5px;
+}
+
+body.dark button{
+  background-color: rgb(52, 67, 122);
+  color: white;
+  font-weight: bolder;
+}
+
+body.dark :root{
+  color: white !important;
+}
+
+body.dark header {
+  color: white;
+  background-color: #292929;
+}
+
+body.dark {
+  background-color: #202020;
+  color: white;
+}
+
+body.dark #notification {
+  background-color: #f10d0d;
+}
+
+body.dark #moviePlot,
+body.dark #movieDirector,
+body.dark #movieActors,
+body.dark #movieYear {
+  color: #ddd;
+}
+
+body.dark .movies {
+  background-color: #292929;
+  color: #ddd;
+}
+
+body.dark .result {
+  background-color: #020202;
+  color: #ddd;
+}
+
+body.dark .movies img {
+  background-color: #292929;
+}
+
+body.dark .movies h2 {
+  background-color: #292929;
+}
+
+body.dark .movieInfo {
+  background-color: #292929;
+  color: white;
+}
+
+body.dark button[type="button"] {
+  background-color: rgb(52, 67, 122);
+  color: white;
+  font-weight: bolder;
+  color: #000000;
+}
+
+body.dark button[type="button"]:hover {
+  background-color: rgb(52, 67, 122);
+  color: white;
+}
+
+body.dark #movieName {
+  color: white;
+}
+
+body.dark #movieLength {
+  color: white;
+}
+
+body.dark #movieInfo {
+  background-color: #292929;
+  color: #ddd;
+}
+
+#toggleDarkMode {
+  background-color: #1a1919;
+  border: 2px solid #ddd;
+  color: #ddd;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  padding: 5px;
+  font-weight: bolder;
+}
+
+#toggleDarkMode:hover {
+  background-color: #292929;
+  color: #ddd;
+}
+
+
+
+
+body.dark #submit {
+  background-color: rgb(52, 67, 122);
+  color: white;
+  font-weight: bolder;
+  color: #000000;
+}

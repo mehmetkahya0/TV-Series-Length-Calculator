@@ -31,11 +31,11 @@ This project is for educational purposes only. Please use responsibly and respec
 
 ## To get the OMDB API key, follow these steps:
 
-Go to the OMDB API website: http://www.omdbapi.com/apikey.aspx
-Click on the "FREE!" button under the "Free Key" section.
-Fill out the form with your details. You'll need to provide your first name, last name, and email address. You also need to agree to the terms of service.
-Click on the "Submit" button.
-You'll receive an email with a link to activate your API key. Click on the link to activate your key.
-Once your key is activated, you can use it in your API requests. Replace your_api_key in the following URL with your actual API key: https://www.omdbapi.com/?apikey=your_api_key
-Please note that the free API key has a limit of 1,000 requests per day. If you need to make more requests, you can purchase a premium key.
+- Go to the OMDB API website: http://www.omdbapi.com/apikey.aspx
+- Click on the "FREE!" button under the "Free Key" section.
+- Fill out the form with your details. You'll need to provide your first name, last name, and email address. You also need to agree to the terms of service.
+- Click on the "Submit" button.
+- You'll receive an email with a link to activate your API key. Click on the link to activate your key.
+- Once your key is activated, you can use it in your API requests. Replace your_api_key in the following URL with your actual API key: https://www.omdbapi.com/?apikey=your_api_key
+- Please note that the free API key has a limit of 1,000 requests per day. If you need to make more requests, you can purchase a premium key.
 

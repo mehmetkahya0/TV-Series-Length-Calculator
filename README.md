@@ -10,7 +10,7 @@ This is a simple web application that calculates the total length of a movie or 
 - Calculates total length of a movie or TV series
 - Displays additional movie information such as director, year, actors, and plot
 - Includes a progress bar to track API usage (limit of 1000 requests per day)
-- Includes a confetti animation when the user enters "interstellar"
+- Includes a confetti animation when the user enters "interstellar" <3
 - Allows the user to toggle between light and dark themes
 
 ## Usage

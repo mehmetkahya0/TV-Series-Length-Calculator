@@ -2,7 +2,7 @@
 ![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2Fmehmetkahya0%2FTV-Series-Length-Calculator&label=VISITORS&countColor=%23263759)
 
 This is a simple web application that calculates the total length of a movie or TV series. It uses the OMDB API to fetch movie data.
-## Live: https://movielengthcalculator.mehmet0.repl.co/
+## Live: https://mehmetkahya0.github.io/TV-Series-Length-Calculator/
 
 ## Features
 
